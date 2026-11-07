@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Map</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+  html, body { height: 100%; margin: 0; padding: 0; font-family: sans-serif; }
+  #map { height: 100%; background: #fff; }
+  .box, .legend {
+    padding: 6px 8px; background: rgba(255,255,255,.9); border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,.2); text-align: center;
+  }
+  .legend {
+    font: bold 14px/18px Arial, Helvetica, sans-serif; color: #555; width: 100px;
+  }
+  .legend i { width: 16px; height: 16px; float: left; opacity: .7; margin-right: 8px; clear: both; }
+  #info {
+    position: absolute; bottom: 10px; left: 10px; z-index: 1000;
+    padding: 6px 16px; font-size: 1.5em; font-weight: bold; line-height: 1.1em;
+    display: flex; align-items: center; gap: 12px; min-height: 28px;
+  }
+  #info img { height: 24px; display: none;
